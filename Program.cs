@@ -6,7 +6,16 @@ namespace ConsoleApplication
     {
         static void Main(string[] args)
         {
-           
+            string[] LastName={"Исмоил","Дениз"};
+            string[] FirstName={"Баротов","Черисчев"};
+            string[] MiddleName={"Хакималиевич","Андрейевич"};
+            int[] Birthyear={1972,1248};
+            string[] Addres={"н.Файзобод","ш.Душанбе"};
+            for(int i=0; i<2; i++)
+            {
+                Student stu=new Student(LastName[i],FirstName[i],MiddleName[i],Birthyear[i],Addres[i]);
+                stu.info(i);
+            }
         }   
     }
        class Student
